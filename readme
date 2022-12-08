@@ -1,0 +1,39 @@
+Submission Files
+- CMM22010350.ipynb   | Jupyter Notebook in Python.
+- Clustering Methods  | Inquiry into Strengths and Limitations.pdf - Project Poster
+
+Functions in CMM22010350.ipynb
+- get_agnes_threshold        | Parameter estimation for dissimilarity threshold (AGNES)
+- get_kmeans_cluster_num     | Parameter estimation for cluster quantity (K-Means)
+- get_dbscan_eps             | Parameter estimation for Epsilon (DB-SCAN)
+- get_birch_cluster_num      | Parameter estimation for cluster quantity (BIRCH)
+- get_gaussian_cluster_num   | Parameter estimation for cluster quantity (GMM)
+
+
+Dependencies of CMM22010350.ipynb (tested with clean installation of Windows 10)
+- Anaconda @ https://www.anaconda.com/
+- Jupyter Notebook (installed with Anaconda)
+- Instal KNEEDLE API via Anaconda Prompt with 'pip install kneed'
+
+
+Available inputs for CMM22010350.ipynb
+- INT   np.random.seed  | NumPy random seed 
+- INT   population      | Synthetic data-set population
+- INT   random_state    | Clustering random state
+- INT   max_clusterNum  | Maximum cluster quantity
+- FLOAT dissSensitivity | AGNES and DB-SCAN threshold sensitivity
+
+
+Instructions for running CMM22010350.ipynb
+1 - Access the notebook via the Jupyter Notebook GUI
+2 - Run the notebook via the 'Cell' -> 'Run All' option
+
+
+Project code-base is derived from https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#comparing-different-clustering-algorithms-on-toy-datasets
+
+The differences include:-
+- The cluster methods employed (KMEANS/AGNES/BIRCH/DBSCAN/GMM vs MINIBATCH KMEANS/AFFINITY PROPAGATION/MEANSHIFT/SPECTRAL CLUSTERING/WARD/AGNES/DBSCAN/OPTICS/BIRCH/GMM)
+- Synthetic data used (CMM22010350.ipynb uses all data-sets present in the code-base, with an additional 'Eye' and 'Cross' distribution type)
+- Pre-clustering synthetic data presentation
+- Implementation of automatic clustering parameter selection (Code-base manually sets the clustering parameters whereas CMM22010350 employs methodology to approximate their values based on relevant metrics or practices)
+- Demonstration of parameter selection process 

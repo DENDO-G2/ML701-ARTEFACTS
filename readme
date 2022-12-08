@@ -1,6 +1,7 @@
 Submission Files
 - CM22010350.ipynb                                                                 | Jupyter Notebook in Python.
 - G_02___INQUIRY_INTO_STRENGTHS___LIMITATIONS_OF_CLUSTERING_METHODS___22010350.pdf | Project Poster
+- G02_Final_Report.pdf                                                             | Project Report
 
 Functions in CM22010350.ipynb
 - get_agnes_threshold        | Parameter estimation for dissimilarity threshold (AGNES)
